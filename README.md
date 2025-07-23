@@ -38,7 +38,7 @@ java -version: Você verá a versão a qual foi instalda.
 
 2️- Instalar o Android Studio
 
-Download: Baixar Android Studio
+Download: https://developer.android.com/studio?hl=pt-br
 
 Instale Android Studio com SDK e AVD.
 
@@ -54,61 +54,79 @@ Adicionar ao Path:
 %ANDROID_HOME%\tools
 %ANDROID_HOME%\tools\bin
 
-Verifique no Prompt se foi instalado corretamente digitando o seguinte comando: adb devices
+Verifique no Prompt se foi instalado corretamente digitando o seguinte comando(Lembrando que tem que verificar somente após configurar as variáveis de ambiente): 
+
+adb devices
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3️- Instalar Node.js e npm
 
-Download: Baixar Node.js
+Download: https://nodejs.org/en/download 
 
-Passos:
+Irá abrir a tela do prompt pedindo para você apertar qualquer tecla e depois utilizar o powershell para continuar
 
-Baixe a versão LTS.
+<img width="1174" height="655" alt="image" src="https://github.com/user-attachments/assets/03563a37-f606-4558-a3a6-f78ae3ad6eb1" />
 
-Instale normalmente.
 
 Verifique no Prompt se foi instalado corretamente digitando os seguintes comandos:
 
 node -v
+
 npm -v
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 4️- Instalar o Appium Doctor
 
-Instalar via npm:
+Instalar via npm: Abra o prompt de comando e digite:
 
 npm install -g appium-doctor
 
-Verifique no Prompt se foi instalado corretamente digitando o seguinte comando: appium-doctor --android
+<img width="1120" height="630" alt="image" src="https://github.com/user-attachments/assets/c8853d34-578b-4664-b156-29c279fee1aa" />
+
+
+Verifique no Prompt se foi instalado corretamente digitando o seguinte comando:
+
+appium-doctor --android
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ATENÇÃO: Caso ao instalar qualquer coisa via npm e receber um alerta de que tem uma versão superior a que está usando e pedir para atualizar, basta rodar o comando abaixo:
+
+npm install -g npm@11.4.2    (claro que irá colocar a versão atual referente a data que está configurando sua máquina)
+
+<img width="1134" height="624" alt="image" src="https://github.com/user-attachments/assets/e53df801-d990-4e2a-b5b2-c4d9d574f64f" />
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 5️- Instalar o Ruby
 
-Download: Baixar RubyInstaller
+Download: RubyInstaller + Ruby+Devkit.
 
-Passos:
+Abra o prompt de comando e digite/rode o seguinte comando, escolhendo após a opção 3: ridk install
 
-Baixe o Ruby+Devkit.
+<img width="1120" height="624" alt="image" src="https://github.com/user-attachments/assets/20646c4c-0913-44aa-b230-931e255043d0" />
 
-Execute o instalador.
-
-Rode ridk install e escolha a opção 3.
 
 Verifique no Prompt se foi instalado corretamente digitando os seguintes comandos:
 
 ruby -v
+
 gem -v
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 6️- Instalar o Appium
 
-Instalação via npm:
+Instalação via npm, digite/rode no prompt:
 
 npm install -g appium
 
-Verifique no Prompt se foi instalado corretamente digitando o seguinte comando: appium -v
+Verifique no Prompt se foi instalado corretamente digitando o seguinte comando: 
+
+appium -v
 
 
 Rodar o Appium:
